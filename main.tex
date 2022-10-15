@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.999pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{framed}
+\usepackage{times}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\input{glyphtounicode}
+
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{0.99in}
+
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+\newcommand{\resumeSkills}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSkillsStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSkillsdEnd}{\end{itemize}}
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%-----------------------------------------------------------
+%Insert 
+\begin{tabular*}{7.44in}{l@{\extracolsep{\fill}}r}
+  & \multirow{4}{*}{\includegraphics[scale=0.061]{profilepic.jpg}}\\
+
+%-----------------------------------------------------------
+
+  \vspace{3pt}\textbf{\Large Linh Duong $|$ Software Engineer } & \\
+  {\vspace{3pt}\textbf{Phone:}  +84 909 296 529 }& \\
+   {\vspace{3pt}\textbf{Email:}  linhduongalmira@gmail.com }& \\
+    {\vspace{3pt}\textbf{Website:}  https://meolinn.github.io/PersonalWebsite/ }& \\   
+   {\vspace{3pt}\textbf{Github:}  @meolinn }& \\
+
+    \end{tabular*}
+
+%-----------EDUCATION-----------
+\textbf{\section{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+     {Foreign Trade University}{HCMC, Vietnam}
+      {{Bachelor of International Business and Trade; K60 Valedictorian of Admission Entry Enrollment}}{Aug. 2021 -- Mar. 2022}
+    \resumeSubheading
+      {School of Science, Engineering and Technology, RMIT }{HCMC, Vietnam}
+      {Bachelor of Information Technology; Minor in Cloud Computing; Student Representative }{Feb. 2022 -- Present}
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
+ \textbf{\section{Projects}}   
+ \resumeSubHeadingListStart
+      \resumeProjectHeading
+            {\textbf{SIGN LANGUAGE TRANSLATOR} $|$ \emph{\textbf{AI, Computer Vision, Terminal (UNIX shell), Python, ReactJS,GitHub, JIRA, Agile}}}{\emph{20th Aug.2022}}
+          \resumeItemListStart
+            \resumeItem{Streamlined the software development by eliminating the data-preparing process with the integration of MediaPipe,which determines hand location and uses machine learning to infer “landmarks” on the hands}
+            \resumeItem{Achieved an accuracy of 95.7\% in real-time video hand, finger tracking by ensembling  Holistic model of MediaPipe and image-processing, computer vision operations of other existing libraries \& frameworks (OpenCV) in only 24 hours}
+            \resumeItem{Initiated the high-level architecture, task delegation \& technical breakdowns of the project regarding the teams's performance consistently }
+            \resumeItem{Consulted with multiple domain experts in Healthcare field for labeling of data and establishing 6 main Agile lifecycle phases of the project.}
+            \resumeItem{Greatly enhanced the collaboration of the team incorporating Agile Methodology \& utilising Jira Software Add-ons under mentor's guidance. }
+          \resumeItemListEnd
+\resumeProjectHeading
+    {\textbf{FACE-DETECTION VIDEOCALL APP SHECODES HACK 2022} $|$ \emph{\textbf{WebRTC, 
+ DJango, Mediapipe, OpenCV, JS, Python}}}{\emph{7th Sep.2022}}
+      \resumeItemListStart
+      \resumeItem{Resolved undermanned conflict of the team by refactoring the software design that led to the deployment of the Web Application in Django.}            \resumeItem{Introduced and adapted the WebRTC technology to meet the web application's scope including peer-to-peer connections between browser, audio and video conferencing, file exchange, screen sharing}
+            \resumeItem{Reduced project's lifetime by 20\% by setting up the environment in PyCharm IDE and installing the necessary dependencies \& pacakages}
+            \resumeItem{Constructed the perception pipeline with the import of MediaPipe, a Deep Learning/Machine Learning framework to obtain good performance}
+            \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{PERSON COUNTER} $|$ \emph{\textbf{Tensorflow, Anaconda, Pandas, DLib, OpenCV, NumPy, SciPy, Bash, Python }}}{\emph{Jun.  2022 -- Jul. 2022}}
+              \resumeItemListStart
+            \resumeItem{Worked solo to optimise SSD model along with the Euclidean-distance algorithm which achievesd 75.1\% mAP, outperforming the R-CNN model and contributing to the final design of a machine learning image classification for  object trackers}
+            \resumeItem{Single-handedly nomalised the time-series data input using OpenCV deep neural-network modules, thus, resulted in better extraction of features from the image and higher image resolution.}
+            \resumeItem{Manipulated data with Python 3 for loading and extraction as well as compared between common ML/DL models using Scikit-learn and Tensorflow and opted out python libraries such as NumPy, SciPy \&
+Pandas for data analysis and numerical computations.
+}
+          \resumeItemListEnd
+            \resumeProjectHeading
+          {\textbf{RMIT STUDENT GROUP MANAGEMENT SYSTEM} $|$ \emph{\textbf{Oracle APEX, Oracle SQL, Oracle Database, GitHub}}}{\emph{Mar. 2022 -- May. 2022}}
+                  \resumeItemListStart
+            \resumeItem{Supported the development of a fully responsive, scalable data-centric web application using Oracle APEX and flexibly accommodated specified requirements and constraints, based on analysis or modelling or requirements specification of the RMIT course group system }
+           \resumeItem{Operated APEX services and Oracle Autonomous Database in Oracle Cloud Infrastructure for the transformation of the spreadsheet-type data }
+            \resumeItem{Defined database schemas, updated database contents \& extracted data from databases for RMIT students’ requirements with SQL }
+          \resumeItemListEnd
+          \resumeSubHeadingListEnd
+%-----------Professional SKILLS-----------
+{\textbf{\section{Professional skills}} 
+ \resumeSubHeadingListStart   
+\resumeItem
+{ \textbf{Software Developing Languages}{: Java , SQL,  
+ Python, Bash, Javascript, HTML/CSS, LaTeX} } \\
+\resumeItem{ \textbf{Frameworks/Libraries}{: Tensorflow, OpenCV, Pandas, MediaPipe, DLib, Numpy, Oracle APEX, WebRTC, DJango, Java Spring}}
+    
+     
+ \resumeItem
+ {    \textbf{Software Management}{: GitHub, Jira Software, Agile Methodology, DevOps Practice} }
+ \resumeItem
+      { \textbf{English Proficiency}{: IELTS 8.0 Overall}}
+\resumeSubHeadingListEnd
+ %-----------EXPERIENCE-----------
+{\textbf{\section{Relevant Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Global Health Hackathon 2022 $|$ \emph{ Top 3 Mentor's Choice For Funding}}{\emph{20th Aug.2022}}
+      {Technical Lead, Machine Learning Engineer}{https://youtu.be/1TAWEDmMR78} 
+      \\
+      \resumeItemListStart
+      
+        \resumeItem{Led and coordinated an international, diverse team of 6 engineers from 5 different countries  throughout intensive 48 hours of non-stop solution hacking }
+        \resumeItem{Out-standingly recognized by Swinburne Academic Heads for building excellent relationships with tech-industry partners like JIRA, MekongCapital, VinAI, etc and for
+positioning unique solutions versus other international leading teams}
+        \resumeItem{Successfully implemented ML-based software projects in using pandas, NumPy, MediaPipe, SciPy, Tensorflow, OpenCV, DLib in Python for developing various machine
+learning algorithms and pipelines to increase performance, quality,
+data management, and accuracy.
+}
+\resumeItem{Evaluated \& determined the right tech stack to maximally automate the validation and interference process getting data ingested by a model to compute predictions before serving the ML model in production to the end-user. }
+    \resumeSubHeadingListEnd
+    
+\end{document}
